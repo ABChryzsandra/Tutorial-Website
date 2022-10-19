@@ -1,0 +1,759 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+	<title> TUTORIALS </title>
+		<style>
+		body {
+		background-color: #EDE0D4}
+		</style>
+
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box;}
+
+        body { 
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+          overflow: hidden;
+          background-color: #B08968;
+          padding: 10px 10px;
+        }
+
+        .header a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 15px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 5px;
+        }
+
+        .header a.logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+
+        .header a:hover {
+          background-color: #EDE0D4;
+          color: black;
+        }
+
+        .header a.active {
+          background-color: #ffffff40;
+          color: white;
+        }
+
+        .header-right {
+          float: right;
+        }
+        
+			@media screen and (max-width: 500px) {
+			  .header a {
+			    float: none;
+			    display: block;
+			    text-align: left;
+			  }
+			  
+			  .header-right {
+			    float: none;
+			  }
+			}
+			</style>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <style>
+              body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+              }
+        
+              #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+              }
+        
+              #myBtn:hover {
+                background-color: #EDE0D4;
+              }
+   
+        body {
+          font-family: "Lato", sans-serif;
+          transition: background-color .5s;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body
+
+
+      .timeline {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #9C6644;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+      }
+
+      .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: #EDE0D4;
+        width: 50%;
+      }
+
+
+      .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #9C6644;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+
+      .left {
+        left: 0;
+      }
+
+
+      .right {
+        left: 50%;
+      }
+
+      .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+
+      .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+
+      .right::after {
+        left: -16px;
+      }
+
+
+      .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+      }
+
+
+      @media screen and (max-width: 600px) {
+        
+        .timeline::after {
+        left: 31px;
+        }
+        
+      
+        .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        }
+        
+        
+        .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+        }
+
+        
+        .left::after, .right::after {
+        left: 15px;
+        }
+        
+        
+        .right {
+        left: 0%;
+        }
+      }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #FAEDCD;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+	  <div class="header-right">
+	    <a href="INDEX.html">Home</a>
+	    <a class="active" href="TUTORIALS.html">Tutorials</a>
+	    <a href="HOME.html">About Me</a>
+	  </div>
+	</div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#1">Lumpiang Shanghai</a>
+    <a href="#2">Chicken Adobo</a>
+    <a href="#3">Sinigang</a>
+    <a href="#4">Chicken Afritada</a>
+    <a href="#5">Caldereta</a>
+    <a href="#6">Pancit</a>
+    <a href="#7">Tinola</a>
+    <a href="#8">Beef Nilaga</a>
+    <a href="#9">Sopas</a>
+    <a href="#10">Pinakbet</a>
+  </div>
+  
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
+
+<table align="center" border="1" style="width:100%">
+  <tr>
+  <td bgcolor="#EDE0D4"><h1><center><font face="cooper black" color="#7F5539"> <br>Filipino Cuisine Recipes </font></center></h1>
+    <font face = "Arial"; size="5px";>Food is a very important part of a Filipino's life. No gathering would be complete without the lechon and so many other Filipino delicacies that we so enjoy. In my personal observation, it can be said that Filipinos seem to live simply for the pleasure of eating. You can't visit a home without being offered a drink and food from the people there. It seems that food and the Filipino have been deeply rooted together. It may be that through food that brings the Filipino family close together.<br><br></font>
+  </td>
+  </tr>
+</table>
+  <div class="timeline">
+    <a name="1">
+      <div class="container left">
+        <div class="content">
+          <h2>Lumpiang Shanghai</h2>
+          <p>A lumpia Shanghai recipe I know all Filipinos are proud of! Lumpia (the Shanghai version) is a type of egg roll, but it's mainly filled with meat. You could use pork, beef, or both. It's a very easy and yummy recipe that's great as finger food. I like to use both beef and pork, but you can substitute one for the other. We serve these spring rolls with sweet and sour sauce, soy sauce with lemon, or banana ketchup.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 pound ground pork</li>
+            <li>1 pound ground beef</li>
+            <li>1 medium onion, finely chopped</li>
+            <li>1 carrot, grated</li>
+            <li>¼ cup soy sauce </li>
+            <li>2 tablespoons salt</li>
+            <li>1 ½ tablespoons garlic powder</li>
+            <li>2 ½ teaspoons black pepper</li>
+            <li>1 (16 ounce) package spring roll wrappers</li>
+            <li>¼ cup water, or as needed</li>
+            <li>1 ½ quarts oil for fryingr</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Combine ground pork, ground beef, onion, and carrot in a large bowl; mix well with hands. Gradually blend in soy sauce, salt, garlic powder, and pepper until incorporated.
+            <br><br>
+            Step 2: Working one at a time, lay a wrapper on a flat surface with a corner pointing at you. Place about 2 tablespoons filling in a line, no thicker than your thumb, across the center of the wrapper. Moisten the edges of wrapper with water. Fold the bottom edge of wrapper snugly over filling. Fold in the left and right sides of wrapper towards the center. Roll up tightly to seal in filling.
+            <br><br>
+            Step 3: Heat oil in a deep fryer or heavy skillet to 375 degrees F (190 degrees C).
+            <br><br>
+            Step 4: Working in batches, fry lumpia in hot oil, turning once, until golden brown, 3 to 4 minutes. Drain on a paper towel-lined plate. Cut lumpia in half, or serve as-is with dipping sauce.
+          </p>
+          <div class="overlay">
+						<img src="https://eatlikepinoy.com/wp-content/uploads/2019/12/LUMPIA-1-e1576825683671.jpg" class="image" style="height: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+    <a name="2">
+      <div class="container right">
+        <div class="content">
+          <h2>Chicken Adobo</h2>
+          <p>Classic chicken adobo recipe that's simple to make and loved by all who try it. It has been modified to be a bit saucier than traditional adobo and is delicious served over rice.</p>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>2 tablespoons vegetable oil</li>
+            <li>1 (3 pound) chicken, cut into pieces</li>
+            <li>1 large onion, quartered and sliced</li>
+            <li>2 tablespoons minced garlic</li>
+            <li>⅔ cup low sodium soy sauce </li>
+            <li>⅓ cup white vinegar</li>
+            <li>1 tablespoon garlic powder</li>
+            <li>2 teaspoons black pepper</li>
+            <li>1 bay leaf</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat vegetable oil in a large skillet over medium-high heat. Cook chicken pieces until golden brown, 2 to 3 minutes per side. Transfer chicken to a plate and set aside.
+            <br><br>
+            Step 2: Add onion and garlic to the skillet; cook until softened and brown, about 6 minutes. Pour in soy sauce and vinegar and season with garlic powder, black pepper, and bay leaf.
+            <br><br>
+            Step 3: Return chicken to pan, increase heat to high, and bring to a boil. Reduce heat to medium-low, cover, and simmer until chicken is tender and cooked through, 35 to 40 minutes.
+          </p>
+          <div class="overlay">
+						<img src="https://foodtray2go.com/wp-content/uploads/2020/08/Chicken-adobo-scaled.jpeg" class="image" style="width: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+    <a name="3">
+      <div class="container left">
+        <div class="content">
+          <h2>Sinigang</h2>
+          <p>Sinigang is a Filipino soup cooked with pork. Serve with rice and for additional sauce, use soy or fish sauce. If you want to, you can add what Filipinos call gabi gabi, which is a small taro root. When peeled they look like potatoes. You can add five to six of them when you add the water and make sure they are cooked through. Take them out when they are cooked because they can get too soft.
+          </p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 tablespoon vegetable oil</li>
+            <li>1 small onion, chopped</li>
+            <li>1 teaspoon salt</li>
+            <li>1 (1/2 inch) piece fresh ginger, chopped</li>
+            <li>2 plum tomatoes, cut into 1/2-inch dice </li>
+            <li>1 pound bone-in pork chopst</li>
+            <li>4 cups water, more if needed</li>
+            <li>1 (1.41 ounce) package tamarind soup base</li>
+            <li>½ pound fresh green beans, trimmed</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat vegetable oil in a skillet over medium heat. Add onion; cook and stir until softened and translucent, about 5 minutes. Season with salt.
+            <br><br>
+            Step 2: Stir in ginger, tomatoes, and pork chops. Cover and reduce heat to medium-low. Turn the pork occasionally, until browned.
+            <br><br>
+            Step 3: Pour in water and tamarind soup base. Bring to a boil, then reduce heat and simmer until the pork is tender and cooked through, about 30 minutes.
+            <br><br>
+            Step 4: Stir in green beans and cook until tender.
+          </p>
+
+          <div class="overlay">
+						<img src="https://philnews.ph/wp-content/uploads/2019/04/Sinigang-Recipe.jpg" class="image" style="width: 100%; height: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="4">
+      <div class="container right">
+        <div class="content">
+          <h2>Chicken Afritada</h2>
+          <p>This is a dish we make back in the Philippines. It's really delicious, and you can substitute pork for chicken or mix them both. Great over rice!</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 tablespoon vegetable oil</li>
+            <li>3 cloves garlic, crushed and chopped</li>
+            <li>1 onion, chopped</li>
+            <li>1 cup seeded and chopped tomatoes</li>
+            <li>1 (3 pound) whole chicken, cut into pieces </li>
+            <li>1 (3 pound) whole chicken, cut into pieces</li>
+            <li>1 cup tomato sauce (Optional)</li>
+            <li>3 potatoes, quartered</li>
+            <li>1 green bell pepper, seeded and cut into matchsticks</li>
+            <li>1 carrot, chopped</li>
+            <li>salt and ground black pepper to taste</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat oil in a large wok over medium heat; add garlic. Cook and stir until fragrant, about 3 minutes. Add onion; cook and stir until translucent, about 5 minutes. Stir in tomatoes; cook, mashing with a fork, until flesh and skin separate, about 5 minutes.
+            <br><br>
+            Step 2: Place chicken in the wok; cook and stir until lightly browned, about 5 minutes. Pour in water. Cover and bring to a boil. Stir in tomato sauce; simmer until flavors combine, about 15 minutes.
+            <br><br>
+            Step 3: Mix potatoes into the wok; simmer until tender, about 10 minutes. Stir in bell pepper and carrot; simmer until softened, about 5 minutes. Season with salt and pepper.
+            <br><br>
+          </p>
+
+          <div class="overlay">
+						<img src="https://th.bing.com/th/id/R.550d076ba38cf0a7b945290296fe1ae5?rik=zliZ7Y6hSESvxw&riu=http%3a%2f%2fwww.pinoycookingrecipes.com%2fuploads%2f7%2f6%2f7%2f8%2f7678114%2fwatermark-2019-05-09-11-08-49_1_orig.jpg&ehk=Gnf%2baTsX3iGudmH8A3JEzEIF48TzQKfMyMhhUOnZgWA%3d&risl=&pid=ImgRaw&r=0" class="image" style="width: 100%; height: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="5">
+      <div class="container left">
+        <div class="content">
+          <h2> Caldereta </h2>
+          <p>A Filipino beef stew traditionally cooked with goat, but it's usually not available in most markets. You can get creative with this dish such as adding garbanzo beans, peas, and raisins. Optional: add 4 ounces of liver pate in place of tomato paste. Serve hot over a bed of rice.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>3 tablespoons vegetable oil</li>
+            <li>1 ½ pounds cubed beef stew meat</li>
+            <li>salt and ground black pepper to taste</li>
+            <li>3 cloves garlic, crushed</li>
+            <li>3 cups water </li>
+            <li>½ cup unsweetened pineapple juice</li>
+            <li>1 onion, chopped</li>
+            <li>1 (14 ounce) can tomato sauce</li>
+            <li>¼ cup tomato paste</li>
+            <li>2 red potatoes, diced</li>
+            <li>1 red bell pepper, sliced</li>
+            <li>1 large carrot, sliced diagonally</li>
+            <li>½ pound miniature cocktail sausages</li>
+            <li>1 (8 ounce) can pineapple chunks, undrained</li>
+            <li>1 (6 ounce) can medium pitted ripe olives, drained</li>
+            <li>3 large bay leaves</li>
+            <li>1 tablespoon hot pepper sauce</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat vegetable oil in a large pot over medium heat. Sprinkle beef with salt and black pepper and brown in the hot oil with garlic, about 10 minutes. Pour in water, pineapple juice, onion, tomato sauce, and tomato paste. Bring to a boil, turn heat to low, and simmer until beef is almost tender, 35 to 45 minutes.
+            <br><br>
+            Step 2: Stir potatoes, red bell pepper, carrot, mini sausages, pineapple chunks with their juice, olives, and bay leaves into the stew. Bring back to a boil and simmer until potatoes are tender, about 20 more minutes. Season with hot pepper sauce, salt, and black pepper.
+            <br><br>
+          </p>
+
+          <div class="overlay">
+						<img src="https://4.bp.blogspot.com/-DSZCxmZ1ESA/WamC90CFpTI/AAAAAAAAAZw/WmzOpB3xZ_MrQZNJHDIFFYTUG6LF7cVJgCLcBGAs/s1600/LLL.png" class="image" style="height: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+    
+    <a name="6">
+      <div class="container right">
+        <div class="content">
+          <h2>Pancit</h2>
+          <p>This quick pancit recipe with chicken, vegetables, and rice noodles is easy and delicious. It will remind you of island fiestas!</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 (12 ounce) package dried rice noodles</li>
+            <li>1 teaspoon vegetable oil</li>
+            <li>1 onion, finely diced</li>
+            <li>3 cloves garlic, minced</li>
+            <li>2 cups diced cooked chicken breast meat </li>
+            <li>1 small head cabbage, thinly sliced</li>
+            <li>4 carrot, thinly sliced</li>
+            <li>¼ cup soy sauce</li>
+            <li>2 lemons - cut into wedges, for garnish</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Place rice noodles in a large bowl; cover with warm water and let soften for 8 to 10 minutes. Drain and set aside.
+            <br><br>
+            Meanwhile, heat oil in a wok or large skillet over medium-low heat. Add onion and garlic; cook and stir until onion is tender, about 3 to 5 minutes. Stir in chicken, cabbage, carrots, and soy sauce. Cook until cabbage begins to soften. Toss in noodles and cook, stirring constantly, until heated through.
+          </p>
+
+          <div class="overlay">
+						<img src="https://www.allrecipes.com/thmb/i2h8_dDYL4gcwDCXWQjUN5nKKGQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2201480-quick-and-easy-pancit-Paula-Goleta-1x1-1-f03b70c77f094dee901e72007dfe1a22.jpg" class="image" style="width: 100%; height: 100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="7">
+      <div class="container left">
+        <div class="content">
+          <h2>Tinola</h2>
+          <p>Tinola is a traditional Filipino comfort food that usually consists of broth, chicken, leafy greens, papaya, and ginger. Fish sauce is a key ingredient that lends a deliciously pungent taste. Chicken tinola is often served with rice to make a hearty meal.
+          This version features chayote squash and bok choy for a fresh, vibrant spin on traditional chicken soup.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 tablespoon cooking oil</li>
+            <li>1 medium onion, chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 (1 1/2 inch) piece fresh ginger, peeled and thinly sliced</li>
+            <li>1 tablespoon fish sauce </li>
+            <li>3 pounds chicken legs and thighs, rinsed and patted dry</li>
+            <li>2 (14 ounce) cans chicken broth</li>
+            <li>1 chayote squash, peeled and cut into bite-sized pieces</li>
+            <li>salt and ground black pepper to taste</li>
+            <li>1 head bok choy, chopped</li>
+            <li>1 (8 ounce) package fresh spinach, chopped</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat oil in a large pot over medium heat. Add onion and garlic; cook and stir until fragrant, about 2 minutes. Add ginger and fish sauce; cook and stir for 1 to 2 minutes. Stir in chicken and cook for 5 minutes.
+            <br><br>
+            Step 2: Pour in chicken broth and cook for 5 minutes. Add squash and simmer until chicken is no longer pink in the center, about 10 minutes. Season with salt and pepper.
+            <br><br>
+            Step 3: Add bok choy and spinach; cook until spinach is just wilted, 1 to 2 minutes. Serve hot.
+          </p>
+
+          <div class="overlay">
+						<img src="https://www.allrecipes.com/thmb/HA1iyEUt56-YQhthv1ll9yz5iCY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8964634-a36d900ff8b54c5ba68208540872ff53.jpg" class="image" style="width: 100%; height:100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="8">
+      <div class="container right">
+        <div class="content">
+          <h2>Beef Nilaga</h2>
+          <p>This is another one-meal-in-a-pot dish. It contains soup, meat and vegetables all cooked together in one delicious broth. Terrific during cooler weather. Serve hot alone or with rice.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>4 ½ pounds beef short ribs</li>
+            <li>1 quart water</li>
+            <li>1 tablespoon black peppercorns, crushed</li>
+            <li>2 onions, chopped</li>
+            <li>2 beef bouillon cubes</li>
+            <li>2 carrots, cut in chunks</li>
+            <li>2 stalks celery, quartered</li>
+            <li>1 chayote squash, peeled and quartered</li>
+            <li>2 potatoes, quartered</li>
+            <li>salt to taste</li>
+            <li>¼ head cabbage, cut into wedges</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Place the beef ribs in a large pot with enough water to cover. Bring to a boil over high heat, and boil for 5 minutes. Drain; discard the cooking water (the ribs will not be fully cooked).
+            <br><br>
+            Step 2: Return the beef to the pot. Pour in the 1 quart water, peppercorns, onions, and beef bouillon. Bring to a boil, cover, reduce the heat, and simmer for 1 hour.
+            <br><br>
+            Step 3: Skim any fat floating on the surface. Stir in the carrots, celery, chayote, and potatoes; cover, and simmer until potatoes are tender, about 20 minutes. Season with salt. Add cabbage and cook an additional 5 minutes.
+          </p>
+
+          <div class="overlay">
+						<img src="https://2.bp.blogspot.com/-zTyzaEXKZaQ/WpFmpBkeONI/AAAAAAAAALw/FOkfu_E-y9UsSbuY3PnP6t4wSwMt6YStACLcBGAs/s1600/beef-nilaga.jpg" class="image" style="width:100%; height:100%">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="9">
+      <div class="container left">
+        <div class="content">
+          <h2> Sopas </h2>
+          <p>Creamy chicken macaroni soup - comfort Filipino food that transcends culture, time, and ages. It's made simply in one pot that I have adjusted to be able to add all ingredients as you go.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>6 cups water, or more as needed</li>
+            <li>½ onion, chopped</li>
+            <li>1 pound bone-in chicken thighs, skin removed</li>
+            <li>1 teaspoon garlic powder</li>
+            <li>1 teaspoon onion powder </li>
+            <li>2 carrots, diced</li>
+            <li>2 tablespoons fish sauce, or more to taste</li>
+            <li>4 teaspoons chicken bouillon granules</li>
+            <li>½ teaspoon ground black pepper</li>
+            <li>½ (16 ounce) package elbow macaroni</li>
+            <li>½ cup evaporated milk</li>
+            <li>3 tablespoons butter</li>
+            <li>1 pinch salt and ground black pepper to taste</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Combine water and onion in a pot and bring to a boil. Add chicken, garlic powder, and onion powder. Bring back to a boil and reduce heat to medium-low. Simmer broth until chicken thighs are tender, about 30 minutes.
+            <br><br>
+            Step 2: Remove chicken and add carrots to the broth. Stir in 2 tablespoons fish sauce, chicken bouillon, and black pepper.
+            <br><br>
+            Step 3: Shred chicken meat and discard bones; return meat to the broth and simmer until carrots are tender, about 10 minutes. Add macaroni; cook until tender, about 20 minutes, adding more water if needed. Stir in evaporated milk and butter; simmer until butter is melted. Add more fish sauce and season with salt and pepper to taste. Pour soup into serving bowls.
+          </p>
+
+          <div class="overlay">
+						<img src="https://asianfoodnetwork.com/content/dam/afn/global/en/recipes/sopas/AFN_sopas_main_image.jpg" class="image" style="width: 100%; height:100%;">
+			    </div>
+        </div>
+      </div>
+    </a>
+
+    <a name="10">
+        <div class="container right">
+        <div class="content">
+          <h2>Pinakbet</h2>
+          <p>Pinakbet is a vegetable-based dish from the Philippines that can be served as an everyday dish or when you have company. Since it also contains pork and prawns, you can eat it as a one-pot meal.</p>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>3 tablespoons olive oil</li>
+            <li>1 onion, chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>½ pound pork loin, chopped</li>
+            <li>½ pound peeled and deveined prawns </li>
+            <li>salt and pepper to taste</li>
+            <li>1 tomato, chopped</li>
+            <li>¼ pound zucchini, seeded and cut into bite-size pieces</li>
+            <li>¼ pound fresh okra, ends trimmed</li>
+            <li>¼ pound fresh green beans, trimmed</li>
+            <li>¼ pound eggplant, cut into bite-size pieces</li>
+            <li>1 small bitter melon, cut into bite-size pieces</li>
+          </ul>
+
+          <h4>Directions</h4>
+          <p>
+            Step 1: Heat oil in a large pot over medium heat; stir in onion and garlic and cook until tender, about 5 minutes.
+            <br><br>
+            Step 2: Add pork; cook and stir until browned, 5 to 7 minutes.
+            <br><br>
+            Step 3: Add prawns; cook and stir until they turn pink, about 5 minutes.
+            <br><br>
+            Step 4: Stir in tomato; season with salt and pepper, cover and simmer for 5 minutes.
+            <br><br>
+            Step 5: Stir in zucchini, okra, green beans, eggplant, and bitter melon; cover and cook until the vegetables are tender, about 10 minutes.
+          </p>
+
+          <div class="overlay">
+						<img src="https://www.allrecipes.com/thmb/438Lh0L-CGxQTA-RIs6fuz-c1fQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/212994-pinakbet-ddmfs-3x4-0376-0dc94566f4ea47c1a8b28e05722d04f2.jpg" class="image" style="width: 100%; height: 100%;">
+			    </div>
+        </div>
+      </a>
+      </div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrow.png" style="width:50px; height:50px"></button>
+
+<script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>    
